@@ -1,11 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Prioridade;
-(function (Prioridade) {
-    Prioridade["baixa"] = "Baixa";
-    Prioridade["media"] = "M\u00E9dia";
-    Prioridade["alta"] = "Alta";
-})(Prioridade || (Prioridade = {}));
+import { Prioridade } from "./Prioridade.js";
 function criarTarefa(titulo, descricao, prioridade) {
     return {
         titulo,

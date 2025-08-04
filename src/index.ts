@@ -1,14 +1,6 @@
-enum Prioridade {
-    baixa = "Baixa",
-    media = "Média",
-    alta = "Alta"
-}
-type Tarefa = {
-    titulo: string; 
-    descricao: string;
-    concluida: boolean;
-    prioridade: Prioridade;
-}
+import type { Tarefa } from "./Tarefa.js";
+import { Prioridade } from "./Prioridade.js";
+
 
 function criarTarefa(titulo: string, descricao: string, prioridade: Prioridade): Tarefa {
     return {
